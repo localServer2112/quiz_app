@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="quiz app using vanilla javascript">
+    <meta name="keywords" content="HNG, Quiz, Javascript">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Flex quiz || Quiz app</title>
+</head>
+<body>
+    <div class="col container">
+        <h1 class="row heading">FlexQuiz</h1>
+        <div class="col success">
+            <img src="success.svg" alt="success">
+            <div class="col msg">
+                <h2>Quiz Over</h2>
+                <p>score</p>
+                <h1 id="s_score">05</h1>
+            </div>
+            <div class="btn">Retake Quiz</div>
+        </div>
+        <div class="col question-area">
+            <div class="col scoreboard">
+                <span>Score</span>
+                <p class="score">00</p>
+            </div>
+            <div class="question-box">
+                <span class="instruction">Instruction :: Select the best option</span>
+                <p id="question">
+                    <br/>
+                shitload of Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, at blanditiis! Excepturi obcaecati libero ut. Labore impedit quod exercitationem cupiditate?
+                </p>
+            </div>
+            <div class="col options-box">
+                <div id="optionA" class="option">
+                    OptionA
+                </div>
+                <div  id="optionB" class="option">
+                    OptionB
+                </div>
+                <div id="optionC" class="option">
+                    OptionC
+                </div>
+                <div id="optionD" class="option">
+                    OptionD
+                </div>
+                <div id="next" class="option next">
+                    Next >>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
