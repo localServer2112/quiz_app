@@ -56,7 +56,7 @@ const restartBtn = document.querySelector('.btn');
 const finalScore = document.querySelector('#s_score');
 const next = document.querySelector('#next');
 const divQuestion = document.querySelector('.question-area');
-const divSuccess = document.querySelector('.success');
+const divSuccess = document.querySelector('.successdiv');
 // event-listeners
 optionA.addEventListener('click',function () {
     selected_opt = 'A';
@@ -153,20 +153,18 @@ function showResult(){
 }
 function getNext(){
    
-       if(_qid < data_obj.length){
+       if(_qid <= data_obj.length){
            console.log(_qid);
-           
+            _qid++;
            setTimeout(() => {
             _current_data = data_obj[_qid];
             reset();
-            _qid++;
             console.log(_qid);
-            
             setQuestion(_current_data);
         }, 2000);
    } 
    else{
-       alert(`Quiz has ended, your score is ${_score}`);
+       alert(`Quiz has ended, your score is ready`);
        showResult();
    }
    

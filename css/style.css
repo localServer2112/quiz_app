@@ -37,7 +37,7 @@ body{
     /* background-color: darkgray; */
 
 }
-.success{
+.successdiv{
     min-height: 30vh;
     justify-content: center;
     align-items: center;
@@ -52,13 +52,13 @@ body{
 .show{
     display: flex !important;
 }
-.success img{
+.successdiv img{
     width: 30vw;
     height: 30vh;
     background-color: #f9f9f9;
     margin: 20pt auto;
 }
-.success .btn{
+.successdiv .btn{
     padding: 8pt 15pt;
     font-weight: 700;
     background-color: #f9f9f9;
@@ -66,7 +66,7 @@ body{
     cursor: pointer;
 
 }
-.success .msg{
+.successdiv .msg{
     justify-content: center;
     align-items: center;
 }
@@ -127,8 +127,8 @@ body{
     cursor: pointer;
 }
 .option:hover{
-    background-color: darkorange;
-    transition: all 0.4s ease-in-out;
+    /* background-color: rgb(196, 108, 0); */
+    transition: all 0.2s ease-in-out;
 }
 .next{
     border: 1px solid #1167a1;
