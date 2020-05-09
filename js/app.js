@@ -153,7 +153,7 @@ function showResult(){
 }
 function getNext(){
    
-       if(_qid <= data_obj.length){
+       if(_qid < data_obj.length){
            console.log(_qid);
             _qid++;
            setTimeout(() => {
